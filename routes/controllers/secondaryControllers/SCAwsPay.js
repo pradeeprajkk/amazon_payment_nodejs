@@ -57,7 +57,7 @@ class SCAwsPay {
             'command':'PURCHASE',
             'access_code': process.env.access_code,
             'merchant_identifier': process.env.merchantIdentifier,
-            'merchant_reference': Math.random(),
+            'merchant_reference': Math.random().toString(),
             'amount':'1.99',
             'currency':'INR',
             'language':'en',
