@@ -1,0 +1,25 @@
+{
+  "name": "amazon_payment_nodejs",
+  "version": "1.0.0",
+  "description": "Amazon Payment Gateway Services",
+  "scripts": {
+    "start": "node ./bin/www",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@amazonpay/amazon-pay-api-sdk-nodejs": "^2.3.1",
+    "apple-pay": "^1.0.2",
+    "axios": "^1.6.7",
+    "body-parser": "^1.20.2",
+    "crypto": "^1.0.1",
+    "dotenv": "^16.4.5",
+    "express": "^4.18.3",
+    "jade": "^1.11.0",
+    "jsonwebtoken": "^9.0.2",
+    "morgan": "^1.10.0",
+    "node-fetch": "^3.3.2",
+    "request": "^2.88.2"
+  }
+}
