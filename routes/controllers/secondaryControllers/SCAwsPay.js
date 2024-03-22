@@ -55,8 +55,8 @@ class SCAwsPay {
         let options = {
             'digital_wallet':'APPLE_PAY',
             'command':'PURCHASE',
-            'access_code':'zx0IPmPy5jp1vAz8Kpg7',
-            'merchant_identifier':'CycHZxVj',
+            'access_code': process.env.access_code,
+            'merchant_identifier': process.env.merchantIdentifier,
             'merchant_reference': Math.random(),
             'amount':'1',
             'currency':'INR',
