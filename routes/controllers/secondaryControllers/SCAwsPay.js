@@ -58,7 +58,7 @@ class SCAwsPay {
             'access_code': process.env.access_code,
             'merchant_identifier': process.env.merchantIdentifier,
             'merchant_reference': Math.random(),
-            'amount':'1',
+            'amount':'1.99',
             'currency':'INR',
             'language':'en',
             'customer_email':'test@example.com',
