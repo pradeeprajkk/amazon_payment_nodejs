@@ -53,7 +53,17 @@ router.post('/purchasePayFort', /*checkJwt,*/ async (req, res, next) => {
 
 router.post('/applePaySession', async (req, res, next) => {
   try {
-    let result = await new SCAwsPay().validateSessiont(req.body);
+    let result = await new SCAwsPay().validateMerchant(req.body);
+    res.status(200).send({ "message": "Success", data: result});
+  } catch (e) {
+    errorHandler(e, req, res);
+  }
+});
+
+
+router.post('/newApplePaySession', async (req, res, next) => {
+  try {
+    let result = await new SCAwsPay().httpsSession(req.body);
     res.status(200).send({ "message": "Success", data: result});
   } catch (e) {
     errorHandler(e, req, res);
@@ -63,7 +73,7 @@ router.post('/applePaySession', async (req, res, next) => {
 
 function errorHandler(e, req, res) {
   console.log({ exception: e, headers: req.headers, body: req.body });
-  res.status(500).send({ status: false, data: [], ...e });
+  res.status(500).send({ status: false, data: [], e });
 }
 
 

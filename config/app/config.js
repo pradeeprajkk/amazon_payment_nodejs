@@ -1,6 +1,6 @@
 const configurationApp = {
     isProduction: true,
-    PORT: 8000,
+    PORT: 8005,
     connectTimeoutMS: 30000
 };
 

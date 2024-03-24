@@ -24,7 +24,7 @@ app.use((req, res, next) => {
   );
   res.header(
     "Access-Control-Allow-Headers",
-    "Origin, X-Requested-With, Content-Type, Accept, Authorization, Cache-Control, username, password, companyid, plantId, BusinessUnitId, teamId, userId, accesstokenidp, access_token_idp, filename, compression, apikey, clientid, cognitoauthentication"
+    "Origin, X-Requested-With, Content-Type, Accept, Authorization, Cache-Control"
   );
   res.header(
     "Cache-Control",
